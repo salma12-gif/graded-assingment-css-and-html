@@ -1,0 +1,180 @@
+body {
+  padding: 0%;
+  margin: 0%;
+}
+h1 {
+  margin: 0%;
+  color: rgb(19, 11, 122);
+  font-size: 50px;
+}
+nav {
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+.menu {
+  background-color: rgb(19, 11, 122);
+  margin: 0%;
+  top: 0%;
+}
+.menu li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0%;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+.menu li:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.menu li:nth-child(2):hover #MedicinesList,
+.menu li:nth-child(3):hover #HealthCareList {
+  display: block;
+}
+
+#MedicinesList,
+#HealthCareList {
+  position: absolute;
+  display: none;
+  top: 42.5px;
+  background-color: white;
+  padding: 0%;
+  margin: 0%;
+}
+
+#MedicinesList li:hover,
+#HealthCareList li:hover {
+  background-color: rgb(19, 11, 122);
+}
+#MedicinesList li:hover a,
+#HealthCareList li:hover a {
+  color: white;
+}
+#MedicinesList li,
+#HealthCareList li {
+  display: block;
+}
+#MedicinesList li a,
+#HealthCareList li a {
+  color: steelblue;
+  font-size: 16px;
+}
+.animation {
+  height: 500px;
+  width: 99%;
+  min-width: 50%;
+  background-image: url("Images for HTML Assignment/Images/Animation/ani2.png");
+  border: 2px solid steelblue;
+  margin: 5px auto;
+  background-size: cover;
+  animation-name: transform;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes transform {
+  0% {
+    background-image: url("Images for HTML Assignment/Images/Animation/ani4.jpg");
+  }
+  40% {
+    background-image: url("Images for HTML Assignment/Images/Animation/ani5.jpg");
+  }
+  50% {
+    background-image: url("Images for HTML Assignment/Images/Animation/ani3.jpg");
+  }
+  75% {
+    background-image: url("Images for HTML Assignment/Images/Animation/ani1.jpg");
+  }
+  100% {
+    background-image: url("Images for HTML Assignment/Images/Animation/ani2.png");
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  width: 99%;
+  min-width: 50%;
+  max-width: 100%;
+  justify-content: space-around;
+  margin: 0%;
+  flex-wrap: wrap;
+}
+.logo {
+  display: flex;
+  width: 99%;
+  align-items: center;
+  justify-content: center;
+}
+#CovidCareHeading,
+#DiabetesCareHeading {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 10px;
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  color: rgb(19, 11, 122);
+}
+footer {
+  background-color: rgb(19, 11, 122);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+.items {
+  width: 220px;
+  height: 250px;
+  background-color: rgb(239, 239, 240);
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  justify-content: space-around;
+  margin: 0%;
+  margin-bottom: 20px;
+}
+.items > img {
+  width: auto;
+  height: 150px;
+}
+.items > p {
+  font-size: 20px;
+  color: steelblue;
+  margin: 2px;
+  margin: 0;
+  padding: 0;
+}
+.items > h4 {
+  margin: 0px;
+  margin-left: 5px;
+  font-size: 16px;
+  color: rgb(19, 11, 122);
+}
+.items > button {
+  border: 2px solid steelblue;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.items > button a {
+  text-decoration: none;
+  color: orangered;
+  font-weight: bold;
+}
+.items > button:active {
+  background-color: rgb(250, 234, 230);
+  border: 2px solid rgb(0, 255, 76);
+}
+.container > .items:hover {
+  width: 250px;
+  height: 270px;
+}

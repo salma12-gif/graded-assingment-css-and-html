@@ -1,0 +1,127 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+  align-items: center;
+}
+.container {
+  display: flex;
+  width: 90vw;
+  height: 82vh;
+  margin: 20px 0px;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2), 0px 60px 200px rgba(0, 0, 0, 0.19);
+  overflow: auto;
+  position: relative;
+  justify-content: space-between;
+  left: 5%;
+}
+.loginform {
+  position: absolute;
+  display: block;
+  width: 48%;
+  margin: 0px;
+  padding: 3px;
+  padding-top: 1px;
+}
+.loginform input {
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  padding: 10px;
+}
+.loginform input:focus {
+  outline: none !important;
+}
+.loginform input[name^="option"] {
+  width: 20px;
+  height: 20px;
+}
+.loginform label {
+  font-size: 20px;
+}
+.loginform h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.loginform h3 {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.loginform .heading3 {
+  margin-bottom: 10px;
+}
+.loginform select {
+  padding: 10px;
+  font-size: 16px;
+}
+.loginform p {
+  font-size: 10px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.image {
+  width: 45%;
+  height: 100%;
+  left: 54.8%;
+  position: sticky;
+  z-index: 1;
+  top: 0%;
+}
+.image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.buttons {
+  width: 600px;
+  margin-left: 20px;
+  text-align: center;
+}
+.buttons a {
+  text-decoration: none;
+  color: white;
+  min-width: 50%;
+}
+button {
+  padding: 5px 10px;
+  background-color: rgb(19, 11, 122);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 0px 40px;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 1201px) {
+  html {
+    font-size: 72.5%;
+  }
+}
